@@ -18,3 +18,6 @@ FROM cte;
 
 -- 잘 생성됐는지 확인
 SELECT COUNT(*) FROM boards;
+select * from boards limit 0, 1000;
+
+create index idx_created_at on boards (created_at);
